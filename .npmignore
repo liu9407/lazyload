@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+dist
+index.html
+gulpfile.js
+.editorconfig
+.gitignore
+.jshintrc
+.npmignore
+bower.json
