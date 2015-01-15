@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Lazy Load Plugin for jQuery | Amaze UI 插件</title>
+  <title>Lazy Load | Amaze UI 插件</title>
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="icon" type="image/png"
@@ -42,14 +42,22 @@
 
 <section class="amp-main">
   <div class="am-container">
-    <h1><a name="Lazy%20Load%20Plugin%20for%20jQuery" class="anchor" href="#Lazy%20Load%20Plugin%20for%20jQuery"><span class="header-link"></span></a>Lazy Load Plugin for jQuery</h1><p>Forked from <a href="https://github.com/tuupola/jquery_lazyload/">Lazy Load Plugin for jQuery</a></p>
+    <h1><a name="Lazy%20Load" class="anchor" href="#Lazy%20Load"><span class="header-link"></span></a>Lazy Load</h1><p>Forked from <a href="https://github.com/tuupola/jquery_lazyload/">Lazy Load Plugin for jQuery</a></p>
 <h2><a name="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="header-link"></span></a>使用方法</h2><p>首先，在页面中引入 jQuery 和 <code>jquery.lazyload.js</code>。</p>
 <div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"jquery.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"jquery.lazyload.js"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre></div><p>然后，修改 <code>&lt;img&gt;</code>，将图片实际地址写在 <code>data-original</code> 上。为方便选择，建议在要使用 Lazy Load 的图片上加统一的 class；为防止页面抖动，图片上应该添加 <code>width</code> 和 <code>height</code> 属性。</p>
 <div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lazy"</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">"img/example.jpg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"640"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"480"</span>&gt;</span></code></pre></div><p>完成 HTML 设置以后，调用 Lazy Load 插件：</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">"img.lazy"</span>).lazyload();</code></pre></div><p><strong>更多演示：</strong></p>
-<h2><a name="%E8%8E%B7%E5%8F%96%E6%8F%92%E4%BB%B6" class="anchor" href="#%E8%8E%B7%E5%8F%96%E6%8F%92%E4%BB%B6"><span class="header-link"></span></a>获取插件</h2><h3><a name="%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD" class="anchor" href="#%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD"><span class="header-link"></span></a>直接下载</h3><p><a href="archive/gh-pages.zip" class="am-btn am-btn-primary">下载 Lazy Load</a></p>
-<h3><a name="%E4%BD%BF%E7%94%A8%20NPM" class="anchor" href="#%E4%BD%BF%E7%94%A8%20NPM"><span class="header-link"></span></a>使用 NPM</h3><h3><a name="%E4%BD%BF%E7%94%A8%20Bower" class="anchor" href="#%E4%BD%BF%E7%94%A8%20Bower"><span class="header-link"></span></a>使用 Bower</h3><pre>bower install jquery.lazyload</pre><h2><a name="License" class="anchor" href="#License"><span class="header-link"></span></a>License</h2><p>All code licensed under the &quot;MIT License&quot;:<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>. All images licensed under &quot;Creative Commons Attribution 3.0 Unported License&quot;:<a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">http://creativecommons.org/licenses/by/3.0/deed.en_US</a>. In other words you are basically free to do whatever you want. Just don&#39;t remove my name from the source.</p>
+<ul>
+<li><a href="dist/enabled.html">基本演示</a></li>
+<li><a href="dist/fadein.html">淡入效果</a></li>
+<li><a href="dist/ajax.html">Ajax 载入内容</a></li>
+<li><a href="dist/background.html">设置背景图片</a></li>
+<li><a href="dist/container.html">容器中懒加载</a></li>
+<li><a href="dist/timeout.html">设置触发机制</a></li>
+</ul>
+<h2><a name="%E8%8E%B7%E5%8F%96%E6%8F%92%E4%BB%B6" class="anchor" href="#%E8%8E%B7%E5%8F%96%E6%8F%92%E4%BB%B6"><span class="header-link"></span></a>获取插件</h2><h3><a name="%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD" class="anchor" href="#%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD"><span class="header-link"></span></a>直接下载</h3><p><a href="https://github.com/amazeui/lazyload/archive/gh-pages.zip" class="am-btn am-btn-primary">下载 Lazy Load</a></p>
+<h3><a name="%E4%BD%BF%E7%94%A8%20NPM" class="anchor" href="#%E4%BD%BF%E7%94%A8%20NPM"><span class="header-link"></span></a>使用 NPM</h3><pre>npm install amazeui-lazyload</pre><h3><a name="%E4%BD%BF%E7%94%A8%20Bower" class="anchor" href="#%E4%BD%BF%E7%94%A8%20Bower"><span class="header-link"></span></a>使用 Bower</h3><pre>bower install jquery.lazyload</pre><h2><a name="License" class="anchor" href="#License"><span class="header-link"></span></a>License</h2><p>All code licensed under the &quot;MIT License&quot;:<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>. All images licensed under &quot;Creative Commons Attribution 3.0 Unported License&quot;:<a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">http://creativecommons.org/licenses/by/3.0/deed.en_US</a>. In other words you are basically free to do whatever you want. Just don&#39;t remove my name from the source.</p>
 
 
     <nav class="amp-pager">

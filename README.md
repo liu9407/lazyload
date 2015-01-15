@@ -1,4 +1,4 @@
-# Lazy Load Plugin for jQuery
+# Lazy Load
 
 Forked from [Lazy Load Plugin for jQuery](https://github.com/tuupola/jquery_lazyload/)
 
@@ -25,15 +25,25 @@ $("img.lazy").lazyload();
 
 **更多演示：**
 
+- [基本演示](dist/enabled.html)
+- [淡入效果](dist/fadein.html)
+- [Ajax 载入内容](dist/ajax.html)
+- [设置背景图片](dist/background.html)
+- [容器中懒加载](dist/container.html)
+- [设置触发机制](dist/timeout.html)
 
 ## 获取插件
 
 
 ### 直接下载
 
-<a href="archive/gh-pages.zip" class="am-btn am-btn-primary">下载 Lazy Load</a>
+<a href="https://github.com/amazeui/lazyload/archive/gh-pages.zip" class="am-btn am-btn-primary">下载 Lazy Load</a>
 
 ### 使用 NPM
+
+```
+npm install amazeui-lazyload
+```
 
 ### 使用 Bower
 

@@ -2,7 +2,8 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var fs = require('fs');
+var browserify = require('browserify');
+var transform = require('vinyl-transform');
 var markJSON = require('markit-json');
 var docUtil = require('amazeui-doc-util');
 
@@ -29,8 +30,26 @@ gulp.task('docs', function(){
     }));
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./**/*.md', ['docs']);
+gulp.task('bundle', function() {
+  var bundler = transform(function(filename) {
+    var b = browserify({
+      entries: filename,
+      basedir: './'
+    });
+    return b.bundle();
+  });
+
+  gulp.src('test/main.js')
+    .pipe(bundler)
+    .pipe($.rename({
+      basename: 'bundle'
+    }))
+    .pipe(gulp.dest('test'))
 });
 
-gulp.task('default', ['docs', 'watch']);
+gulp.task('watch', function() {
+  gulp.watch('./**/*.md', ['docs']);
+  gulp.watch('./test/main.js', ['bundle']);
+});
+
+gulp.task('default', ['docs', 'bundle', 'watch']);

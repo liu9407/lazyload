@@ -15,14 +15,25 @@
   },
   "devDependencies": {
     "amazeui-doc-util": "^0.1.0",
+    "browserify": "^8.1.0",
+    "browserify-shim": "^3.8.2",
     "gulp": "^3.8.10",
     "gulp-less": "^2.0.1",
     "gulp-load-plugins": "^0.8.0",
     "gulp-rename": "^1.2.0",
     "markit-json": "^0.2.1",
-    "through2": "^0.6.3"
+    "through2": "^0.6.3",
+    "vinyl-transform": "^1.0.0"
   },
   "dependencies": {
     "amazeui": "^2.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:jQuery"
   }
 }
