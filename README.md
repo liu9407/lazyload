@@ -25,19 +25,18 @@ $("img.lazy").lazyload();
 
 **更多演示：**
 
-- [基本演示](http://amazeui.github.io/lazyload/dist/enabled.html)
-- [淡入效果](http://amazeui.github.io/lazyload/dist/fadein.html)
-- [Ajax 载入内容](http://amazeui.github.io/lazyload/dist/ajax.html)
-- [设置背景图片](http://amazeui.github.io/lazyload/dist/background.html)
-- [容器中懒加载](http://amazeui.github.io/lazyload/dist/container.html)
-- [设置触发机制](http://amazeui.github.io/lazyload/dist/timeout.html)
+- [基本演示](http://amazeui.github.io/lazyload/examples/enabled.html)
+- [淡入效果](http://amazeui.github.io/lazyload/examples/fadein.html)
+- [Ajax 载入内容](http://amazeui.github.io/lazyload/examples/ajax.html)
+- [设置背景图片](http://amazeui.github.io/lazyload/examples/background.html)
+- [容器中懒加载](http://amazeui.github.io/lazyload/examples/container.html)
+- [设置触发机制](http://amazeui.github.io/lazyload/examples/timeout.html)
 
 ## 获取插件
 
-
 ### 直接下载
 
-<a href="https://github.com/amazeui/lazyload/archive/gh-pages.zip" class="am-btn am-btn-primary">下载 Lazy Load</a>
+<a href="https://github.com/amazeui/lazyload/archive/master.zip" class="am-btn am-btn-primary">下载 Lazy Load</a>
 
 ### 使用 NPM
 
