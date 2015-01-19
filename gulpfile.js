@@ -10,7 +10,6 @@ var browserSync = require('browser-sync');
 var del = require('del');
 var runSequence = require('run-sequence');
 var reload = browserSync.reload;
-var pkg = require('./package.json');
 
 gulp.task('clean', function(cb) {
   del('dist', cb);
@@ -22,7 +21,7 @@ gulp.task('copy:img', function() {
 });
 
 gulp.task('copy:js', function() {
-  return gulp.src('jquery.lazyload*.js')
+  return gulp.src('amazeui.lazyload*.js')
     .pipe(gulp.dest('dist'));
 });
 

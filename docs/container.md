@@ -63,7 +63,7 @@ $('img.lazy').lazyload({
           data-original="img/corvette_pitstop.jpg" width="765" height="574" alt="Corvette Pitstop"></p>
 </div>
 
-<script src="../jquery.lazyload.js"></script>
+<script src="../amazeui.lazyload.js"></script>
 <script>
   $(function() {
     $("img.lazy").lazyload({effect: "fadeIn", container: $("#container")});

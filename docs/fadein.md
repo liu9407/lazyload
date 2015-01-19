@@ -50,7 +50,7 @@ $('img.lazy').lazyload({
           alt="Corvette Pitstop"></p>
 </div>
 
-<script src="../jquery.lazyload.js"></script>
+<script src="../amazeui.lazyload.js"></script>
 <script>
   $(function() {
     $("img.lazy").lazyload({

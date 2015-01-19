@@ -40,7 +40,7 @@ $('#container').one('click', function() {
   <button type="button" class="am-btn am-btn-danger am-btn-block">点击载入图片</button>
 </div>
 
-<script src="../jquery.lazyload.js?v=1.9.3"></script>
+<script src="../amazeui.lazyload.js"></script>
 <script>
   $(function() {
     $("#container").one("click", function() {

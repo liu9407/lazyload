@@ -8,7 +8,7 @@ Forked from [Lazy Load Plugin for jQuery](https://github.com/tuupola/jquery_lazy
 
 ```html
 <script src="jquery.js"></script>
-<script src="jquery.lazyload.js" type="text/javascript"></script>
+<script src="amazeui.lazyload.js></script>
 ```
 
 然后，修改 `<img>`，将图片实际地址写在 `data-original` 上。为方便选择，建议在要使用 Lazy Load 的图片上加统一的 class；为防止页面抖动，图片上应该添加 `width` 和 `height` 属性。
