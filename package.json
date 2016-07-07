@@ -1,6 +1,7 @@
 {
   "name": "amazeui-lazyload",
-  "version": "1.9.4",
+  "version": "1.9.8",
+  "description": "Lazyload 插件使用示例",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -14,23 +15,25 @@
     "test": "gulp test"
   },
   "devDependencies": {
-    "amazeui-doc-util": "^0.1.0",
-    "browser-sync": "^1.9.0",
-    "browserify": "^8.1.0",
-    "browserify-shim": "^3.8.2",
-    "del": "^1.1.1",
-    "gulp": "^3.8.10",
-    "gulp-gh-pages": "^0.4.0",
-    "gulp-less": "^2.0.1",
-    "gulp-load-plugins": "^0.8.0",
-    "gulp-rename": "^1.2.0",
+    "amazeui-doc-util": "^0.7.1",
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "browserify-shim": "^3.8.12",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-marked-json": "^1.0.0",
+    "gulp-rename": "^1.2.2",
     "markit-json": "^0.2.1",
-    "run-sequence": "^1.0.2",
-    "through2": "^0.6.3",
-    "vinyl-transform": "^1.0.0"
+    "run-sequence": "^1.2.2",
+    "through2": "^2.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "amazeui": "^2.1.0"
+    "amazeui": "^2.7.0"
   },
   "browserify": {
     "transform": [
@@ -39,5 +42,11 @@
   },
   "browserify-shim": {
     "jquery": "global:jQuery"
-  }
+  },
+  "keywords": [
+    "amazeui-plugin",
+    "lazyload",
+    "jquery-plugin"
+  ],
+  "homepage": "http://amazeui.github.io/lazyload/"
 }
