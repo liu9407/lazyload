@@ -11,20 +11,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="icon" type="image/png"
-        href="http://a.static.amazeui.org/assets/i/favicon.png">
+        href="http://s.amazeui.org/assets/2.x/i/favicon.png">
   <link rel="stylesheet"
-        href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
-  <link rel="stylesheet" href="http://a.static.amazeui.org/assets/plugin/css/app.min.css">
+        href="http://cdn.amazeui.org/amazeui/2.7.0/css/amazeui.min.css">
+  <link rel="stylesheet" href="http://s.amazeui.org/assets/plugin/css/app.min.css">
   <!--[if (gte IE 9)|!(IE)]><!-->
-  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="http://cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>
+  <script src="http://cdn.amazeui.org/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.7.0/js/amazeui.min.js"></script>
   <!--<![endif]-->
-  <!--[if lte IE 8 ]>
-  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-  <![endif]-->
   
 </head>
 <body class="am-plugin">
+<!--[if lte IE 8 ]>
+<div class="am-alert am-alert">
+  不支持你使用的浏览器，<a href="http://browsehappy.com/?locale=zh" target="_blank">请升级。</a>
+</div>
+<![endif]-->
 <header class="am-topbar am-topbar-inverse">
   <div class="am-container">
     <h1 class="am-topbar-brand">
@@ -37,21 +39,21 @@
   <div class="am-container">
     <h1>Lazy Load</h1>
     <p class="">基于 jQuery 的图片懒加载插件。</p>
-    <p>
-      <a class="github-button" href="https://github.com/amazeui/lazyload">Star</a>
-      <a class="github-button" href="https://github.com/amazeui/lazyload">Fork</a>
-      <a class="github-button" href="https://github.com/amazeui/lazyload/archive/master.zip">Download</a>
-    </p>
+      <p>
+        <a class="github-button" href="https://github.com/amazeui/lazyload">Star</a>
+        <a class="github-button" href="https://github.com/amazeui/lazyload">Fork</a>
+        <a class="github-button" href="https://github.com/amazeui/lazyload/archive/master.zip">Download</a>
+      </p>
   </div>
 </section>
 
 <section class="amp-main">
-  <div class="am-container">
-    <h1><a name="Lazy%20Load" class="anchor" href="#Lazy%20Load"><span class="header-link"></span></a>Lazy Load</h1><p>Forked from <a href="https://github.com/tuupola/jquery_lazyload/">Lazy Load Plugin for jQuery</a></p>
-<h2><a name="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="header-link"></span></a>使用方法</h2><p>首先，在页面中引入 jQuery 和 <code>jquery.lazyload.js</code>。</p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"jquery.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"amazeui.lazyload.js&gt;&lt;/script&gt;</span></span></code></pre></div><p>然后，修改 <code>&lt;img&gt;</code>，将图片实际地址写在 <code>data-original</code> 上。为方便选择，建议在要使用 Lazy Load 的图片上加统一的 class；为防止页面抖动，图片上应该添加 <code>width</code> 和 <code>height</code> 属性。</p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"lazy"</span> <span class="hljs-attribute">data-original</span>=<span class="hljs-value">"img/example.jpg"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"640"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"480"</span>&gt;</span></code></pre></div><p>完成 HTML 设置以后，调用 Lazy Load 插件：</p>
+  <div class="am-container amp-content">
+    <h1><a name="lazy-load" class="anchor" href="#lazy-load"><span class="header-link"></span></a>Lazy Load</h1><p>Forked from <a href="https://github.com/tuupola/jquery_lazyload/">Lazy Load Plugin for jQuery</a></p>
+<h2><a name="shi-yong-fang-fa" class="anchor" href="#shi-yong-fang-fa"><span class="header-link"></span></a>使用方法</h2><p>首先，在页面中引入 jQuery 和 <code>jquery.lazyload.js</code>。</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"jquery.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"amazeui.lazyload.js&gt;&lt;/script&gt;</span></span></code></pre></div><p>然后，修改 <code>&lt;img&gt;</code>，将图片实际地址写在 <code>data-original</code> 上。为方便选择，建议在要使用 Lazy Load 的图片上加统一的 class；为防止页面抖动，图片上应该添加 <code>width</code> 和 <code>height</code> 属性。</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lazy"</span> <span class="hljs-attr">data-original</span>=<span class="hljs-string">"img/example.jpg"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"640"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"480"</span>&gt;</span></code></pre></div><p>完成 HTML 设置以后，调用 Lazy Load 插件：</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">"img.lazy"</span>).lazyload();</code></pre></div><p><strong>更多演示：</strong></p>
 <ul>
 <li><a href="http://amazeui.github.io/lazyload/examples/enabled.html">基本演示</a></li>
@@ -61,8 +63,8 @@
 <li><a href="http://amazeui.github.io/lazyload/examples/container.html">容器中懒加载</a></li>
 <li><a href="http://amazeui.github.io/lazyload/examples/timeout.html">设置触发机制</a></li>
 </ul>
-<h2><a name="%E8%8E%B7%E5%8F%96%E6%8F%92%E4%BB%B6" class="anchor" href="#%E8%8E%B7%E5%8F%96%E6%8F%92%E4%BB%B6"><span class="header-link"></span></a>获取插件</h2><h3><a name="%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD" class="anchor" href="#%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD"><span class="header-link"></span></a>直接下载</h3><p><a href="https://github.com/amazeui/lazyload/archive/master.zip" class="am-btn am-btn-primary">下载 Lazy Load</a></p>
-<h3><a name="%E4%BD%BF%E7%94%A8%20NPM" class="anchor" href="#%E4%BD%BF%E7%94%A8%20NPM"><span class="header-link"></span></a>使用 NPM</h3><pre>npm install amazeui-lazyload</pre><h3><a name="%E4%BD%BF%E7%94%A8%20Bower" class="anchor" href="#%E4%BD%BF%E7%94%A8%20Bower"><span class="header-link"></span></a>使用 Bower</h3><pre>bower install jquery.lazyload</pre><h2><a name="License" class="anchor" href="#License"><span class="header-link"></span></a>License</h2><p>All code licensed under the &quot;MIT License&quot;:<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>. All images licensed under &quot;Creative Commons Attribution 3.0 Unported License&quot;:<a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">http://creativecommons.org/licenses/by/3.0/deed.en_US</a>. In other words you are basically free to do whatever you want. Just don&#39;t remove my name from the source.</p>
+<h2><a name="huo-qu-cha-jian" class="anchor" href="#huo-qu-cha-jian"><span class="header-link"></span></a>获取插件</h2><h3><a name="zhi-jie-xia-zai" class="anchor" href="#zhi-jie-xia-zai"><span class="header-link"></span></a>直接下载</h3><p><a href="https://github.com/amazeui/lazyload/archive/master.zip" class="am-btn am-btn-primary">下载 Lazy Load</a></p>
+<h3><a name="shi-yong-npm" class="anchor" href="#shi-yong-npm"><span class="header-link"></span></a>使用 NPM</h3><pre>npm install amazeui-lazyload</pre><h3><a name="shi-yong-bower" class="anchor" href="#shi-yong-bower"><span class="header-link"></span></a>使用 Bower</h3><pre>bower install jquery.lazyload</pre><h2><a name="license" class="anchor" href="#license"><span class="header-link"></span></a>License</h2><p>All code licensed under the &quot;MIT License&quot;:<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>. All images licensed under &quot;Creative Commons Attribution 3.0 Unported License&quot;:<a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">http://creativecommons.org/licenses/by/3.0/deed.en_US</a>. In other words you are basically free to do whatever you want. Just don&#39;t remove my name from the source.</p>
 
 
     <nav class="amp-pager">
@@ -70,9 +72,28 @@
   </div>
 </section>
 
-<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="javascript: void(0)" data-am-popover="{content: 'Amaze UI 交流 Q 群：374946651'}" title="Amaze UI 用户交流群" target="_blank"><span class="am-icon-qq"></span></a></li><li><a href="http://weibo.com/allmobilize" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/allmobilize/amazeui/issues/new?title=Bug%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A...%20%0A%20%0A**UA:**%20%0A" target="_blank" title="Bug 反馈"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015 AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://a.static.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
-<script src="http://a.static.amazeui.org/assets/plugin/js/app.min.js"></script>
-<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="http://weibo.com/amazeui" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/amazeui/" target="_blank" title="联系我们"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a href="http://www.yunshipei.com" target="_blank">云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015~2016  AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://s.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
+<script src="http://s.amazeui.org/assets/plugin/js/app.min.js"></script>
+  <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?b424d39312c46404f15e22574a531fbb";
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hm);
+  })();
+
+  (function(w, d, s) {
+    function gs(){
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(w , d, s ,'//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-34196034-8', 'amazeui.org');
+      ga('send', 'pageview');
+    }
+    if (w.addEventListener) { w.addEventListener('load', gs, false); }
+    else if (w.attachEvent) { w.attachEvent('onload',gs); }
+  }(window, document, 'script'));
+</script>
 </body>
 </html>
